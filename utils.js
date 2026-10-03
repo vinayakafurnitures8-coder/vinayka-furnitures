@@ -1,0 +1,1 @@
+export const el=(s,p=document)=>p.querySelector(s);export const els=(s,p=document)=>[...p.querySelectorAll(s)];export const escapeHTML=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
